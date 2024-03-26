@@ -23,14 +23,12 @@ public class Calendrier extends Application {
     }
 
     public static void main(String[] args) {
-
         launch();
     }
     public static Connection getDatabaseConnection() {
         String url = "jdbc:postgresql://pedago.univ-avignon.fr:5432/etd";
         String user = "uapv2200700";
         String password = "kDfUsr";
-
         try {
             return DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
