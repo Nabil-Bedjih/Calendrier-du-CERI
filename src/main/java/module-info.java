@@ -8,6 +8,7 @@ module com.prototypage.calendrierduceri {
     requires org.kordamp.bootstrapfx.core;
     requires java.sql;
     requires ical4j;
+    requires java.mail;
 
     opens com.prototypage.calendrierduceri to javafx.fxml;
     exports com.prototypage.calendrierduceri;
