@@ -14,7 +14,7 @@ import java.io.IOException;
 public class Calendrier extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Calendrier.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Calendrier.class.getResource("Login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
         stage.setTitle("Calendrier du CERI");
@@ -35,5 +35,14 @@ public class Calendrier extends Application {
             System.out.println("Erreur de connexion à la base de données: " + e.getMessage());
             return null;
         }
+    }
+    public static void getConnectionView() throws IOException {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(Calendrier.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
+        stage.setTitle("Calendrier du CERI");
+        stage.setScene(scene);
+        stage.show();
     }
 }

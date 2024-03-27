@@ -39,9 +39,9 @@ public class EmailSender {
     public static void main(String[] args) {
         String host = "smtp.gmail.com";
         String port = "587";
-        String username = "your email;
-        String password = "your password";
-        String recipientEmail = "email destenation";
+        String username = "nabil.bedjih10@gmail.com";
+        String password = "bnih miiw tfcp rpap";
+        String recipientEmail = "nabil.bedjih@alumni.univ-avignon.fr";
         String subject = "alerte";
         String messageContent = "ceci est un test";
 
